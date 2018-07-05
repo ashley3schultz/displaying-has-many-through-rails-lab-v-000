@@ -3,7 +3,6 @@ class Patient < ActiveRecord::Base
   has_many :doctors, through: :appointments
 
   def name_appt
-    binding.pry
     "#{name} #{appointments.size}"
   end
 end
