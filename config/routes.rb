@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :patients
   resources :appointments, only: [:show]
 
-  match '/index',  to: 'patients#index'
+  match 'appointments/index',  to: 'patients#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
