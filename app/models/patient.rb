@@ -3,6 +3,7 @@ class Patient < ActiveRecord::Base
   has_many :doctors, through: :appointments
 
   def name_appt
-    self.name + self.appointments.size
+    binding.pry
+    name + appointments.size
   end
 end
