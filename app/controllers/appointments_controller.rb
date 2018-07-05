@@ -5,7 +5,7 @@ class AppointmentsController < ApplicationController
   end
 
   def index
-    rendor patients_path
+    redirect_to patients_path
   end
 
 end
