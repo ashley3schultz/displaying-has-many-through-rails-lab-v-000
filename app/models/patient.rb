@@ -4,6 +4,6 @@ class Patient < ActiveRecord::Base
 
   def name_appt
     binding.pry
-    name + appointments.size
+    "#{name} #{appointments.size}"
   end
 end
