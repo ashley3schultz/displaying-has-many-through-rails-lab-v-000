@@ -4,8 +4,8 @@ class AppointmentsController < ApplicationController
     @appt = Appointment.find(params[:id])
   end
 
-  def index 
-    redirect_to patients_path
-  end 
+  def index
+    rendor patients_path
+  end
 
 end
