@@ -3,6 +3,6 @@ class Patient < ActiveRecord::Base
   has_many :doctors, through: :appointments
 
   def name_appt
-    "#{name} #{appointments.size}"
+    "Name: #{name} Number of Appointments: #{appointments.size}"
   end
 end
