@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :appointments, only: [:show]
 
   Routing Error
-No route matches [GET] "/product/5"
+  No route matches [GET] "/patients/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
